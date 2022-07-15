@@ -1,3 +1,9 @@
 h1 {
     color: green;
 }
+
+.avatar {
+    max-width: 200px;
+    border-radius: 50%;
+    text-align: center;
+}
