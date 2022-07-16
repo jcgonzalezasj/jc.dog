@@ -4,8 +4,19 @@ body, html {
     font-family: 'Open Sans', sans-serif;
 }
 
+#vanta {
+    z-index: -1;
+}
+
+main {
+    z-index: 1;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 header {
-    margin-top: 1em;
+    padding-top: 1em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -16,4 +27,27 @@ header > img {
     width: 6m;
     height: 6em;
     border-radius: 50%;
+    border: 3px solid white;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+
+li > a {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
+    box-shadow: rgb(10 11 13 / 8%) 0px 2px 4px 0px;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    display: block;
+    margin-bottom: 16px;
 }

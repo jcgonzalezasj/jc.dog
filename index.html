@@ -2,17 +2,32 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Juan Carlo - Links</title>
         <link rel="stylesheet" href="style.css">
         <script src="./p5.min.js"></script>
         <script src="./vanta.topology.min.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                VANTA.TOPOLOGY({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 100,
+                minWidth: 100,
+                scale: 1.00,
+                scaleMobile: 1.00
+                })
+            })
+        </script>
     </head>
     <body>
-        <main id="main">
+        <div id="vanta"></div>
+        <main>
             <header>
                 <img class="avatar" src="./assets/juan.jpg">
-                <h1>Juan Carlo</h1>
+                <h1>juan</h1>
             </header>
             <ul>
                 <li>
@@ -37,15 +52,3 @@
         </main>
     </body>
 </html>
-<script>
-    VANTA.TOPOLOGY({
-    el: "#main",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: auto,
-    minWidth: auto,
-    scale: 1.00,
-    scaleMobile: 1.00
-    })
-</script>
