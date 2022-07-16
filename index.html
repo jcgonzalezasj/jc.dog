@@ -5,9 +5,11 @@
         <meta name="viewport" />
         <title>Juan Carlo - Links</title>
         <link rel="stylesheet" href="style.css">
+        <script src="./p5.min.js"></script>
+        <script src="./vanta.topology.min.js"></script>
     </head>
     <body>
-        <main>
+        <main id="main">
             <header>
                 <img class="avatar" src="./assets/juan.jpg">
                 <h1>Juan Carlo</h1>
@@ -35,3 +37,15 @@
         </main>
     </body>
 </html>
+<script>
+    VANTA.TOPOLOGY({
+    el: "#main",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: auto,
+    minWidth: auto,
+    scale: 1.00,
+    scaleMobile: 1.00
+    })
+</script>
